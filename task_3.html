@@ -2,32 +2,33 @@
 <html>
 <head>
     <title>..to Mars</title>
+    <style>
+        body {
+            background-image: url('image copy.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+    </style>
 </head>
-<style>
-body {
-  background-image: url('image copy.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
 <body>
 
 <h1 style="color:#FF5733">Book a flight to Mars from anywhere on planet Earth!!</h1>
 <form action="https://www.w3schools.com/action_page.php" method="post">
-  <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
   
-  <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
   
-  <label for="fear">Are you afraid to fly:</label>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+  <label for="fear">Are you afraid to fly:</label><br>
   <select id="fear" name="fear">
     <option value="yes">YES!!!!</option>
     <option value="no">no</option>
   </select><br><br>
 
-  <label for="aliens">Have you seen an alien?</label>
+  <label for="aliens">Have you seen an alien?</label><br>
   <select id="aliens" name="aliens">
     <option value="yes">Yes</option>
     <option value="no">No</option>
@@ -36,15 +37,24 @@ body {
 
   <label>Seating class:</label><br>
   <input type="checkbox" id="class1" name="travel_class" value="economy">
-  <label for="class1">No compfort pod</label><br>
+  <label for="class1">No comfort pod</label><br>
   <input type="checkbox" id="class2" name="travel_class" value="luxury">
-  <label for="class2">Elons Musk's rocket</label><br><br>
+  <label for="class2">Elon Musk's rocket</label><br><br>
 
   <label>Luggage weight limit:</label><br>
   <input type="radio" id="luggage1" name="luggage" value="light">
   <label for="luggage1">Light</label><br>
   <input type="radio" id="luggage2" name="luggage" value="heavy">
   <label for="luggage2">Heavy</label><br><br>
+
+  <label for="bdate">Your birth date:</label><br>
+  <input type="date" id="bdate" name="bdate"><br><br>
+
+  <label for="pemail">Email:</label><br>
+  <input type="email" id="pemail" name="pemail"><br><br>
+
+  <label for="pdoc">Please, add your passport/eId copy:</label><br>
+  <input type="file" id="pdoc" name="pdoc"><br><br>
 
   <input type="submit" value="Submit">
 </form>
